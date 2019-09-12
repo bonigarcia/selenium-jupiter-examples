@@ -42,7 +42,7 @@ class DockerAndroidTest {
 
     @Test
     void testAndroid(
-            @DockerBrowser(type = ANDROID, version = "9.0", deviceName = "Nexus S") RemoteWebDriver driver)
+            @DockerBrowser(type = ANDROID, version = "9.0", deviceName = "Samsung Galaxy S6") RemoteWebDriver driver)
             throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle(),
