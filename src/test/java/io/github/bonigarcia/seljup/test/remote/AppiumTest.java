@@ -30,7 +30,7 @@ import io.github.bonigarcia.seljup.DriverUrl;
 import io.github.bonigarcia.seljup.SeleniumExtension;
 
 @ExtendWith(SeleniumExtension.class)
-public class AppiumTest {
+class AppiumTest {
 
     @DriverUrl
     String url = "http://localhost:4723/wd/hub";
