@@ -17,7 +17,7 @@
 package io.github.bonigarcia.seljup.test.docker;
 
 import static com.codeborne.selenide.Condition.visible;
-import static io.github.bonigarcia.seljup.BrowserType.CHROME;
+import static io.github.bonigarcia.seljup.BrowserType.OPERA;
 import static org.openqa.selenium.By.linkText;
 
 import org.junit.jupiter.api.BeforeAll;
@@ -39,11 +39,11 @@ class DockerSelenideTest {
     static void setup() {
         seleniumExtension.getConfig().setVnc(true);
         seleniumExtension.getConfig().setRecording(true);
+        seleniumExtension.getConfig().setRecordingVideoScreenSize("1920x1080");
     }
 
     @Test
-    void testDockerSelenideChrome(
-            @DockerBrowser(type = CHROME) SelenideDriver driver)
+    void testDockerSelenide(@DockerBrowser(type = OPERA) SelenideDriver driver)
             throws InterruptedException {
         driver.open("https://bonigarcia.github.io/selenium-jupiter/");
         SelenideElement about = driver.$(linkText("About"));
