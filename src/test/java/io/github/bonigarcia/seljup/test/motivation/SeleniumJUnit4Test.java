@@ -33,10 +33,10 @@ public class SeleniumJUnit4Test {
     @BeforeClass
     public static void setupClass() {
         System.setProperty("webdriver.chrome.driver",
-                "/home/boni/.m2/repository/webdriver/chromedriver/linux64/76.0.3809.126/chromedriver");
+                "/opt/webdriver/chromedriver");
 
-        // FIXME: Path chromedriver in your system
-        // Alternatively, you can use WebDriverManager for this, see
+        // FIXME: Change the path of chromedriver in your computer.
+        // Alternatively, you can use WebDriverManager to automate this, see:
         // https://github.com/bonigarcia/webdrivermanager
     }
 
