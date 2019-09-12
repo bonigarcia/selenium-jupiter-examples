@@ -22,28 +22,34 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.github.bonigarcia.seljup.Options;
 import io.github.bonigarcia.seljup.SeleniumExtension;
 
 @ExtendWith(SeleniumExtension.class)
-class ChromeWithGlobalOptionsTest {
+class FirefoxWithOptionsTest {
 
     @Options
-    ChromeOptions chromeOptions = new ChromeOptions();
+    FirefoxOptions firefoxOptions = new FirefoxOptions();
     {
-        chromeOptions.addArguments("--use-fake-device-for-media-stream",
-                "--use-fake-ui-for-media-stream");
+        // Flag to use fake media for WebRTC user media
+        firefoxOptions.addPreference("media.navigator.streams.fake", true);
+
+        // Flag to avoid granting access to user media
+        firefoxOptions.addPreference("media.navigator.permission.disabled",
+                true);
     }
 
     @Test
-    void webrtcTest(ChromeDriver driver) {
+    void webrtcTest(FirefoxDriver driver) throws InterruptedException {
         driver.get(
                 "https://webrtc.github.io/samples/src/content/devices/input-output/");
         assertThat(driver.findElement(By.id("video")).getTagName(),
                 equalTo("video"));
+
+        Thread.sleep(5000);
     }
 
 }

@@ -16,7 +16,7 @@
  */
 package io.github.bonigarcia.seljup.test.docker;
 
-import static io.github.bonigarcia.seljup.BrowserType.CHROME;
+import static io.github.bonigarcia.seljup.BrowserType.EDGE;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -39,13 +39,13 @@ class DockerVncTest {
     }
 
     @Test
-    void testVnc(@DockerBrowser(type = CHROME) RemoteWebDriver driver)
+    void testVnc(@DockerBrowser(type = EDGE) RemoteWebDriver driver)
             throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle(),
                 containsString("JUnit 5 extension for Selenium"));
 
-        Thread.sleep(20000);
+        Thread.sleep(30000);
     }
 
 }

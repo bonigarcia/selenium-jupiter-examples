@@ -39,12 +39,16 @@ class ChromeWithOptionsTest {
     }
 
     @Test
-    void webrtcTest(@Arguments({ "--use-fake-device-for-media-stream",
-            "--use-fake-ui-for-media-stream" }) ChromeDriver driver) {
+    void webrtcTest(
+            @Arguments({ "--use-fake-device-for-media-stream",
+                    "--use-fake-ui-for-media-stream" }) ChromeDriver driver)
+            throws InterruptedException {
         driver.get(
                 "https://webrtc.github.io/samples/src/content/devices/input-output/");
         assertThat(driver.findElement(By.id("video")).getTagName(),
                 equalTo("video"));
+
+        Thread.sleep(5000);
     }
 
 }

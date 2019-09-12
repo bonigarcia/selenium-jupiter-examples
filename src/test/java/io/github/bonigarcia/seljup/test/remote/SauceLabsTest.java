@@ -37,8 +37,11 @@ class SauceLabsTest {
     @DriverCapabilities
     DesiredCapabilities capabilities = new DesiredCapabilities();
     {
-        capabilities.setCapability("username", "<my-saucelabs-user>");
-        capabilities.setCapability("accessKey", "<my-saucelabs-key>");
+        String sauceLabsUser = System.getProperty("sauceLabsUser");
+        String sauceLabsKey = System.getProperty("sauceLabsKey");
+
+        capabilities.setCapability("username", sauceLabsUser);
+        capabilities.setCapability("accessKey", sauceLabsKey);
         capabilities.setCapability("browserName", "Chrome");
         capabilities.setCapability("platform", "Windows 10");
         capabilities.setCapability("version", "59.0");
@@ -46,10 +49,12 @@ class SauceLabsTest {
     }
 
     @Test
-    void testWithSaucelabs(RemoteWebDriver driver) {
+    void test(RemoteWebDriver driver) throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle(),
                 containsString("JUnit 5 extension for Selenium"));
+
+        Thread.sleep(50000);
     }
 
 }

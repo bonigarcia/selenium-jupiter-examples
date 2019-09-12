@@ -70,7 +70,7 @@ class OrderedJupiterTest {
     @AfterEach
     void waitABit() throws InterruptedException {
         log.debug("After each test ... waiting 2 seconds");
-        Thread.sleep(2000);
+        Thread.sleep(5000);
     }
 
 }
