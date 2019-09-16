@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  */
-package io.github.bonigarcia.seljup.test.motivation;
+package io.github.bonigarcia.seljup.test.local;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -34,10 +34,6 @@ public class SeleniumJUnit4Test {
     public static void setupClass() {
         System.setProperty("webdriver.chrome.driver",
                 "/opt/webdriver/chromedriver");
-
-        // FIXME: Change the path of chromedriver in your computer.
-        // Alternatively, you can use WebDriverManager to automate this, see:
-        // https://github.com/bonigarcia/webdrivermanager
     }
 
     @Before

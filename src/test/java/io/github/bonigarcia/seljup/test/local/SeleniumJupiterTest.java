@@ -14,14 +14,14 @@
  * limitations under the License.
  *
  */
-package io.github.bonigarcia.seljup.test.motivation;
+package io.github.bonigarcia.seljup.test.local;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.seljup.SeleniumExtension;
 
@@ -29,7 +29,7 @@ import io.github.bonigarcia.seljup.SeleniumExtension;
 class SeleniumJupiterTest {
 
     @Test
-    void test(FirefoxDriver driver) {
+    void test(ChromeDriver driver) {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle(),
                 containsString("JUnit 5 extension for Selenium"));

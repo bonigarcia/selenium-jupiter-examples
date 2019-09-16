@@ -30,14 +30,6 @@ import io.github.bonigarcia.seljup.SeleniumExtension;
 
 @ExtendWith(SeleniumExtension.class)
 class ChromeWithOptionsTest {
-
-    @Test
-    void headlessTest(@Arguments("--headless") ChromeDriver driver) {
-        driver.get("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(driver.getTitle(),
-                containsString("JUnit 5 extension for Selenium"));
-    }
-
     @Test
     void webrtcTest(
             @Arguments({ "--use-fake-device-for-media-stream",
@@ -51,4 +43,10 @@ class ChromeWithOptionsTest {
         Thread.sleep(5000);
     }
 
+    @Test
+    void headlessTest(@Arguments("--headless") ChromeDriver driver) {
+        driver.get("https://bonigarcia.github.io/selenium-jupiter/");
+        assertThat(driver.getTitle(),
+                containsString("JUnit 5 extension for Selenium"));
+    }
 }
