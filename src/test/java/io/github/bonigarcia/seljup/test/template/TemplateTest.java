@@ -19,7 +19,6 @@ package io.github.bonigarcia.seljup.test.template;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import org.openqa.selenium.WebDriver;
@@ -30,12 +29,6 @@ class TemplateTest {
 
     @RegisterExtension
     static SeleniumExtension seleniumExtension = new SeleniumExtension();
-
-    @BeforeAll
-    static void setup() {
-        seleniumExtension.getConfig()
-                .setBrowserTemplateJsonFile("classpath:browsers-docker.json");
-    }
 
     @TestTemplate
     void templateTest(WebDriver driver) {
