@@ -1,0 +1,46 @@
+repositories {
+    mavenCentral()
+}
+
+ext {
+	slf4j = '1.7.25'
+	logback = '1.2.3'
+
+	junitjupiter = '5.5.2'
+	seleniumjupiter = '3.3.1'
+	hamcrest = '1.3'
+	junit4 = '4.12' 
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+jar {
+    baseName = 'selenium-jupiter-examples'
+    version = '3.3.1'
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+compileTestJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.compilerArgs += '-parameters'
+}
+
+dependencies {
+    compile("org.slf4j:slf4j-api:${slf4j}")
+    compile("ch.qos.logback:logback-classic:${logback}")
+    
+    testCompile("org.junit.jupiter:junit-jupiter-engine:${junitjupiter}")
+    testCompile("io.github.bonigarcia:selenium-jupiter:${seleniumjupiter}")
+    testCompile("org.hamcrest:hamcrest-all:${hamcrest}")
+    testCompile("junit:junit:${junit4}")
+}
