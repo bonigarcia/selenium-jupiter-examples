@@ -48,7 +48,7 @@ class DockerAndroidTest {
         assertThat(driver.getTitle(),
                 containsString("JUnit 5 extension for Selenium"));
 
-        Thread.sleep(20000);
+        Thread.sleep(10000);
     }
 
 }
