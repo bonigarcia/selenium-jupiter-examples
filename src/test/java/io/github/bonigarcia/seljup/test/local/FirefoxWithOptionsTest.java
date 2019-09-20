@@ -43,13 +43,11 @@ class FirefoxWithOptionsTest {
     }
 
     @Test
-    void webrtcTest(FirefoxDriver driver) throws InterruptedException {
+    void webrtcTest(FirefoxDriver driver) {
         driver.get(
                 "https://webrtc.github.io/samples/src/content/devices/input-output/");
         assertThat(driver.findElement(By.id("video")).getTagName(),
                 equalTo("video"));
-
-        Thread.sleep(5000);
     }
 
 }
