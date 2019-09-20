@@ -22,7 +22,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.slf4j.LoggerFactory.getLogger;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -51,7 +50,7 @@ class OrderedTest {
 
     @Test
     @Order(1)
-    void testStep1() throws InterruptedException {
+    void testStep1() {
         log.debug("Step 1: {}", driver);
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle(),
@@ -60,17 +59,13 @@ class OrderedTest {
 
     @Test
     @Order(2)
-    void testStep2() {
+    void testStep2() throws InterruptedException {
         log.debug("Step 2: {}", driver);
         WebElement about = driver.findElementByLinkText("About");
         assertTrue(about.isDisplayed());
         about.click();
-    }
 
-    @AfterEach
-    void waitABit() throws InterruptedException {
-        log.debug("After each test ... waiting 2 seconds");
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
 }
