@@ -16,7 +16,6 @@
  */
 package io.github.bonigarcia.seljup.test.local;
 
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.startsWith;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -30,13 +29,6 @@ import io.github.bonigarcia.seljup.SeleniumExtension;
 
 @ExtendWith(SeleniumExtension.class)
 class LocalBrowsersTest {
-
-    @Test
-    void testWithOneChrome(ChromeDriver driver) {
-        driver.get("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(driver.getTitle(),
-                containsString("JUnit 5 extension for Selenium"));
-    }
 
     @Test
     void testWithChromeAndFirefox(ChromeDriver driver1, FirefoxDriver driver2) {
