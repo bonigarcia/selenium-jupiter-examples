@@ -36,13 +36,13 @@ import io.github.bonigarcia.seljup.SingleSession;
 @ExtendWith(SeleniumExtension.class)
 @TestMethodOrder(OrderAnnotation.class)
 @SingleSession
-class OrderedTest {
+class OrderedSeleniumTest {
 
     final Logger log = getLogger(lookup().lookupClass());
 
     RemoteWebDriver driver;
 
-    OrderedTest(ChromeDriver driver) {
+    OrderedSeleniumTest(ChromeDriver driver) {
         this.driver = driver;
     }
 
