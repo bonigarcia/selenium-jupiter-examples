@@ -16,8 +16,7 @@
  */
 package io.github.bonigarcia.seljup.test.remote;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -45,8 +44,8 @@ class AppiumTest {
     @Test
     void testWithAndroid(AppiumDriver<WebElement> driver) {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(driver.getTitle(),
-                containsString("JUnit 5 extension for Selenium"));
+        assertThat(driver.getTitle())
+                .containsMatch("JUnit 5 extension for Selenium");
     }
 
 }

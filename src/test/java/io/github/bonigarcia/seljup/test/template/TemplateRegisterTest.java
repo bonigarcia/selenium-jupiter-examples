@@ -16,8 +16,7 @@
  */
 package io.github.bonigarcia.seljup.test.template;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestTemplate;
@@ -44,8 +43,8 @@ class TemplateRegisterTest {
     @TestTemplate
     void templateTest(WebDriver driver) {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(driver.getTitle(),
-                containsString("JUnit 5 extension for Selenium"));
+        assertThat(driver.getTitle())
+                .containsMatch("JUnit 5 extension for Selenium");
     }
 
 }

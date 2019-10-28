@@ -16,9 +16,7 @@
  */
 package io.github.bonigarcia.seljup.test.local;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.startsWith;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -34,8 +32,8 @@ class LocalBrowsersTest {
     void testWithChromeAndFirefox(ChromeDriver driver1, FirefoxDriver driver2) {
         driver1.get("http://www.seleniumhq.org/");
         driver2.get("http://junit.org/junit5/");
-        assertThat(driver1.getTitle(), startsWith("Selenium"));
-        assertThat(driver2.getTitle(), equalTo("JUnit 5"));
+        assertThat(driver1.getTitle()).startsWith("Selenium");
+        assertThat(driver2.getTitle()).isEqualTo("JUnit 5");
     }
 
 }

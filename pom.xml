@@ -15,7 +15,7 @@
         <!-- Test dependencies version -->
         <junit5.version>5.5.2</junit5.version>
         <selenium-jupiter.version>3.3.2</selenium-jupiter.version>
-        <hamcrest.version>1.3</hamcrest.version>
+        <truth.version>1.0</truth.version>
         <junit4.version>4.12</junit4.version>
 
         <!-- Plugins versions -->
@@ -66,9 +66,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId>
-            <version>${hamcrest.version}</version>
+            <groupId>com.google.truth</groupId>
+            <artifactId>truth</artifactId>
+            <version>${truth.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

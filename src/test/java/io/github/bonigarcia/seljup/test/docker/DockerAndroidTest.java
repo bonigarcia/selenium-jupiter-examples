@@ -16,9 +16,8 @@
  */
 package io.github.bonigarcia.seljup.test.docker;
 
+import static com.google.common.truth.Truth.assertThat;
 import static io.github.bonigarcia.seljup.BrowserType.ANDROID;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.BeforeAll;
 // tag::snippet-in-doc[]
@@ -45,8 +44,8 @@ class DockerAndroidTest {
             @DockerBrowser(type = ANDROID, version = "9.0", deviceName = "Samsung Galaxy S6") RemoteWebDriver driver)
             throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(driver.getTitle(),
-                containsString("JUnit 5 extension for Selenium"));
+        assertThat(driver.getTitle())
+                .containsMatch("JUnit 5 extension for Selenium");
 
         Thread.sleep(10000);
     }

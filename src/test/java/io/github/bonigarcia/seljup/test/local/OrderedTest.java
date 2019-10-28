@@ -16,10 +16,8 @@
  */
 package io.github.bonigarcia.seljup.test.local;
 
+import static com.google.common.truth.Truth.assertThat;
 import static java.lang.invoke.MethodHandles.lookup;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.slf4j.LoggerFactory.getLogger;
 
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
@@ -53,8 +51,8 @@ class OrderedTest {
     void testStep1() {
         log.debug("Step 1: {}", driver);
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(driver.getTitle(),
-                containsString("JUnit 5 extension for Selenium"));
+        assertThat(driver.getTitle())
+                .containsMatch("JUnit 5 extension for Selenium");
     }
 
     @Test
@@ -62,7 +60,8 @@ class OrderedTest {
     void testStep2() throws InterruptedException {
         log.debug("Step 2: {}", driver);
         WebElement about = driver.findElementByLinkText("About");
-        assertTrue(about.isDisplayed());
+
+        assertThat(about.isDisplayed());
         about.click();
 
         Thread.sleep(3000);

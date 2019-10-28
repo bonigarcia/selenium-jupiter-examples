@@ -16,9 +16,7 @@
  */
 package io.github.bonigarcia.seljup.test.local;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -37,8 +35,8 @@ class ChromeWithOptionsTest {
             throws InterruptedException {
         driver.get(
                 "https://webrtc.github.io/samples/src/content/devices/input-output/");
-        assertThat(driver.findElement(By.id("video")).getTagName(),
-                equalTo("video"));
+        assertThat(driver.findElement(By.id("video")).getTagName())
+                .isEqualTo("video");
 
         Thread.sleep(5000);
     }
@@ -46,7 +44,7 @@ class ChromeWithOptionsTest {
     @Test
     void headlessTest(@Arguments("--headless") ChromeDriver driver) {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(driver.getTitle(),
-                containsString("JUnit 5 extension for Selenium"));
+        assertThat(driver.getTitle())
+                .containsMatch("JUnit 5 extension for Selenium");
     }
 }

@@ -16,9 +16,8 @@
  */
 package io.github.bonigarcia.seljup.test.docker;
 
+import static com.google.common.truth.Truth.assertThat;
 import static io.github.bonigarcia.seljup.BrowserType.CHROME;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -40,11 +39,11 @@ class DockerRecordingTest {
 
     @Test
     void testRecording(
-            @DockerBrowser(type = CHROME, version = "latest-1") RemoteWebDriver arg0)
+            @DockerBrowser(type = CHROME, version = "latest-1") RemoteWebDriver driver)
             throws InterruptedException {
-        arg0.get("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(arg0.getTitle(),
-                containsString("JUnit 5 extension for Selenium"));
+        driver.get("https://bonigarcia.github.io/selenium-jupiter/");
+        assertThat(driver.getTitle())
+                .containsMatch("JUnit 5 extension for Selenium");
 
         Thread.sleep(5000);
     }

@@ -18,9 +18,8 @@ package io.github.bonigarcia.seljup.test.local;
 
 import static com.codeborne.selenide.Browsers.FIREFOX;
 import static com.codeborne.selenide.Condition.visible;
-import static org.hamcrest.CoreMatchers.containsString;
+import static com.google.common.truth.Truth.assertThat;
 import static org.openqa.selenium.By.linkText;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -46,8 +45,8 @@ class SelenideTest {
     void testWithSelenideAndFirefox(
             @SelenideConfiguration(browser = FIREFOX) SelenideDriver driver) {
         driver.open("https://bonigarcia.github.io/selenium-jupiter/");
-        assertThat(driver.title(),
-                containsString("JUnit 5 extension for Selenium"));
+        assertThat(driver.title())
+                .containsMatch("JUnit 5 extension for Selenium");
     }
 
 }
