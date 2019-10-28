@@ -40,6 +40,7 @@ dependencies {
     compile("ch.qos.logback:logback-classic:${logback}")
     
     testCompile("org.junit.jupiter:junit-jupiter-engine:${junitjupiter}")
+    testCompile("org.junit.jupiter:junit-jupiter-params:${junitJupiterVersion}")
     testCompile("io.github.bonigarcia:selenium-jupiter:${seleniumjupiter}")
     testCompile("com.google.truth:truth:${truth}")
     testCompile("junit:junit:${junit4}")
