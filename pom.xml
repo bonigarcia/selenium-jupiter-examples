@@ -13,7 +13,7 @@
         <logback.version>1.2.3</logback.version>
 
         <!-- Test dependencies version -->
-        <junit5.version>5.5.2</junit5.version>
+        <junit.jupiter.version>5.5.2</junit.jupiter.version>
         <selenium-jupiter.version>3.3.2</selenium-jupiter.version>
         <truth.version>1.0</truth.version>
         <junit4.version>4.12</junit4.version>
@@ -56,13 +56,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit5.version}</version>
+            <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit5.version}</version>
+            <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
