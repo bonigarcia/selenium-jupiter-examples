@@ -18,7 +18,7 @@ In order to include *Selenium-Jupiter* in a Maven project, first add the followi
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>selenium-jupiter</artifactId>
-    <version>3.3.1</version>
+    <version>3.3.2</version>
     <scope>test</scope>
 </dependency>
 ```
@@ -27,7 +27,7 @@ In order to include *Selenium-Jupiter* in a Maven project, first add the followi
 
 ```
 dependencies {
-    testCompile("io.github.bonigarcia:selenium-jupiter:3.3.1")
+    testCompile("io.github.bonigarcia:selenium-jupiter:3.3.2")
 }
 ```
 
