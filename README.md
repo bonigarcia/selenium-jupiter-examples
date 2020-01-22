@@ -18,7 +18,7 @@ In order to include *Selenium-Jupiter* in a Maven project, first add the followi
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>selenium-jupiter</artifactId>
-    <version>3.3.2</version>
+    <version>3.3.4</version>
     <scope>test</scope>
 </dependency>
 ```
@@ -27,7 +27,7 @@ In order to include *Selenium-Jupiter* in a Maven project, first add the followi
 
 ```
 dependencies {
-    testCompile("io.github.bonigarcia:selenium-jupiter:3.3.2")
+    testCompile("io.github.bonigarcia:selenium-jupiter:3.3.4")
 }
 ```
 
@@ -49,7 +49,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 ## About
 
-Selenium-Jupiter (Copyright &copy; 2017-2019) is a project by [Boni Garcia] licensed under [Apache 2.0 License].
+Selenium-Jupiter (Copyright &copy; 2017-2020) is a project by [Boni Garcia] licensed under [Apache 2.0 License].
 
 [Apache 2.0 License]: http://www.apache.org/licenses/LICENSE-2.0
 [Boni Garcia]: http://bonigarcia.github.io/
