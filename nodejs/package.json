@@ -1,0 +1,13 @@
+{
+    "name": "firestore",
+    "description": "Basic test using Selenium WebDriver in Node.js and Selenium-Jupiter as server",
+    "version": "1.0.0",
+    "license": "Apache Version 2.0",
+    "author": "Boni García",
+    "scripts": {
+        "start": "node basic-test.js"
+    },
+    "dependencies": {
+        "selenium-webdriver": "^4.0.0-alpha"
+    }
+}
