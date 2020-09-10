@@ -25,9 +25,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.seljup.DriverCapabilities;
 import io.github.bonigarcia.seljup.DriverUrl;
-import io.github.bonigarcia.seljup.SeleniumExtension;
+import io.github.bonigarcia.seljup.SeleniumJupiter;
 
-@ExtendWith(SeleniumExtension.class)
+@ExtendWith(SeleniumJupiter.class)
 class SauceLabsTest {
 
     @DriverUrl

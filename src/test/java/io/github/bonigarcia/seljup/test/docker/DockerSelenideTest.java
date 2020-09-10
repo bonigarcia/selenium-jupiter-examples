@@ -28,18 +28,18 @@ import com.codeborne.selenide.SelenideDriver;
 import com.codeborne.selenide.SelenideElement;
 
 import io.github.bonigarcia.seljup.DockerBrowser;
-import io.github.bonigarcia.seljup.SeleniumExtension;
+import io.github.bonigarcia.seljup.SeleniumJupiter;
 
 class DockerSelenideTest {
 
     @RegisterExtension
-    static SeleniumExtension seleniumExtension = new SeleniumExtension();
+    static SeleniumJupiter seleniumJupiter = new SeleniumJupiter();
 
     @BeforeAll
     static void setup() {
-        seleniumExtension.getConfig().setVnc(true);
-        seleniumExtension.getConfig().setRecording(true);
-        seleniumExtension.getConfig().setRecordingVideoScreenSize("1920x1080");
+        seleniumJupiter.getConfig().setVnc(true);
+        seleniumJupiter.getConfig().setRecording(true);
+        seleniumJupiter.getConfig().setRecordingVideoScreenSize("1920x1080");
     }
 
     @Test
