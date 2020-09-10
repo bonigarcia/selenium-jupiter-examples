@@ -38,7 +38,7 @@ class AppiumTest {
     DesiredCapabilities capabilities = new DesiredCapabilities();
     {
         capabilities.setCapability("browserName", "chrome");
-        capabilities.setCapability("deviceName", "Galaxy Nexus API 28");
+        capabilities.setCapability("deviceName", "Galaxy Nexus API 30");
     }
 
     @Test
