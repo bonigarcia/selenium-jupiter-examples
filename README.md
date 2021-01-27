@@ -27,7 +27,7 @@ In order to include *Selenium-Jupiter* in a Maven project, first add the followi
 
 ```
 dependencies {
-    testCompile("io.github.bonigarcia:selenium-jupiter:3.3.5")
+    testImplementation("io.github.bonigarcia:selenium-jupiter:3.3.5")
 }
 ```
 

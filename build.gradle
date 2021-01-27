@@ -36,12 +36,12 @@ compileTestJava {
 }
 
 dependencies {
-    compile("org.slf4j:slf4j-api:${slf4j}")
-    compile("ch.qos.logback:logback-classic:${logback}")
+    implementation("org.slf4j:slf4j-api:${slf4j}")
+    implementation("ch.qos.logback:logback-classic:${logback}")
     
-    testCompile("org.junit.jupiter:junit-jupiter-engine:${junit5}")
-    testCompile("org.junit.jupiter:junit-jupiter-params:${junit5}")
-    testCompile("io.github.bonigarcia:selenium-jupiter:${seleniumjupiter}")
-    testCompile("com.google.truth:truth:${truth}")
-    testCompile("junit:junit:${junit4}")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:${junit5}")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:${junit5}")
+    testImplementation("io.github.bonigarcia:selenium-jupiter:${seleniumjupiter}")
+    testImplementation("com.google.truth:truth:${truth}")
+    testImplementation("junit:junit:${junit4}")
 }
