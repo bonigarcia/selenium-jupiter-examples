@@ -4,7 +4,7 @@ async function basicTest() {
 	var seleniumServerUrl = "http://localhost:4042/wd/hub";
 	var capabilities = {
 		browserName : "chrome",
-		version: "85.0"
+		version: "88.0"
 	};
 
 	try {
