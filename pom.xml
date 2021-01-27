@@ -5,7 +5,7 @@
 
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>selenium-jupiter-examples</artifactId>
-    <version>3.3.5</version>
+    <version>3.4.0</version>
 
     <properties>
         <!-- Dependencies -->
@@ -14,7 +14,7 @@
 
         <!-- Test dependencies version -->
         <junit5.version>5.6.2</junit5.version>
-        <selenium-jupiter.version>3.3.5</selenium-jupiter.version>
+        <selenium-jupiter.version>3.4.0</selenium-jupiter.version>
         <truth.version>1.0.1</truth.version>
         <junit4.version>4.13</junit4.version>
 
