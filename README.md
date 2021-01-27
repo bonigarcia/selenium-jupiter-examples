@@ -12,7 +12,7 @@
 
 ## Usage
 
-In order to include *Selenium-Jupiter* in a Maven project, first add the following dependency to your `pom.xml` (Java 8 required):
+In order to include *Selenium-Jupiter* in a Maven project, first add the following dependency to your `pom.xml` (Java 8+ required):
 
 ```xml
 <dependency>
@@ -49,7 +49,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 ## About
 
-Selenium-Jupiter (Copyright &copy; 2017-2020) is a project by [Boni Garcia] licensed under [Apache 2.0 License].
+Selenium-Jupiter (Copyright &copy; 2017-2021) is a project by [Boni Garcia] licensed under [Apache 2.0 License].
 
 [Apache 2.0 License]: http://www.apache.org/licenses/LICENSE-2.0
 [Boni Garcia]: http://bonigarcia.github.io/
