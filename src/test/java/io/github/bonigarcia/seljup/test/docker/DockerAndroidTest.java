@@ -37,6 +37,7 @@ class DockerAndroidTest {
     static void setup() {
         seleniumJupiter.getConfig().setVnc(true);
         seleniumJupiter.getConfig().setRecording(true);
+        seleniumJupiter.getConfig().setAndroidDeviceStartupTimeoutSec(10);
     }
 
     @Test
@@ -47,7 +48,7 @@ class DockerAndroidTest {
         assertThat(driver.getTitle())
                 .containsMatch("JUnit 5 extension for Selenium");
 
-        Thread.sleep(10000);
+        Thread.sleep(20000);
     }
 
 }
