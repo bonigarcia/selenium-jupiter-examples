@@ -37,7 +37,7 @@ class DockerAndroidTest {
     static void setup() {
         seleniumJupiter.getConfig().setVnc(true);
         seleniumJupiter.getConfig().setRecording(true);
-        seleniumJupiter.getConfig().setAndroidDeviceStartupTimeoutSec(10);
+        seleniumJupiter.getConfig().setAndroidDeviceStartupTimeoutSec(15);
     }
 
     @Test
