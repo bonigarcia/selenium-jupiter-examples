@@ -94,7 +94,7 @@
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
                     <groups>docker</groups>
-                    <excludedGroups>local, remote</excludedGroups>
+                    <excludedGroups>local, remote, android</excludedGroups>
                 </configuration>
             </plugin>
         </plugins>

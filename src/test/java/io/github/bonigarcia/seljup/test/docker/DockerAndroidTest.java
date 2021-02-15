@@ -33,6 +33,7 @@ import io.github.bonigarcia.seljup.SeleniumJupiter;
 
 @EnabledOnOs(LINUX)
 @Tag("docker")
+@Tag("android")
 class DockerAndroidTest {
 
     @RegisterExtension
