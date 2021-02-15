@@ -18,6 +18,7 @@ package io.github.bonigarcia.seljup.test.remote;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -27,6 +28,7 @@ import io.github.bonigarcia.seljup.DriverCapabilities;
 import io.github.bonigarcia.seljup.DriverUrl;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
+@Tag("remote")
 @ExtendWith(SeleniumJupiter.class)
 class SauceLabsTest {
 

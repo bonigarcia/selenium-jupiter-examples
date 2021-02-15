@@ -21,6 +21,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.google.common.truth.Truth.assertThat;
 import static org.openqa.selenium.By.linkText;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -30,6 +31,7 @@ import com.codeborne.selenide.SelenideElement;
 import io.github.bonigarcia.seljup.SelenideConfiguration;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
+@Tag("local")
 @ExtendWith(SeleniumJupiter.class)
 class SelenideTest {
 

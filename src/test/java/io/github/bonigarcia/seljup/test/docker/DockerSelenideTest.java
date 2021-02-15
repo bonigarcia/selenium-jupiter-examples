@@ -21,6 +21,7 @@ import static io.github.bonigarcia.seljup.BrowserType.OPERA;
 import static org.openqa.selenium.By.linkText;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 
@@ -30,6 +31,7 @@ import com.codeborne.selenide.SelenideElement;
 import io.github.bonigarcia.seljup.DockerBrowser;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
+@Tag("docker")
 class DockerSelenideTest {
 
     @RegisterExtension

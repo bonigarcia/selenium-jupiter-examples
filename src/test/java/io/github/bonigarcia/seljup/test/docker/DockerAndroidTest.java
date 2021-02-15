@@ -21,6 +21,7 @@ import static io.github.bonigarcia.seljup.BrowserType.ANDROID;
 import static org.junit.jupiter.api.condition.OS.LINUX;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 // tag::snippet-in-doc[]
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledOnOs;
@@ -31,6 +32,7 @@ import io.github.bonigarcia.seljup.DockerBrowser;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
 @EnabledOnOs(LINUX)
+@Tag("docker")
 class DockerAndroidTest {
 
     @RegisterExtension
