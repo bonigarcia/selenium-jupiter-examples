@@ -93,8 +93,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
-                    <groups>docker</groups>
-                    <excludedGroups>local, remote, android</excludedGroups>
+                    <groups>local, docker</groups>
+                    <excludedGroups>remote, android</excludedGroups>
                 </configuration>
             </plugin>
         </plugins>
