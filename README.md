@@ -1,10 +1,10 @@
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.github.bonigarcia%20a%3Aselenium-jupiter)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.github.bonigarcia%20a%3Aselenium-jupiter)
 [![Build Status](https://github.com/bonigarcia/selenium-jupiter-examples/workflows/build/badge.svg)](https://github.com/bonigarcia/selenium-jupiter-examples/actions)
-[![badge-jdk](https://img.shields.io/badge/jdk-8-green.svg)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-[![License badge](https://img.shields.io/badge/license-Apache2-green.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![badge-jdk](https://img.shields.io/badge/jdk-8-green.svg)](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+[![License badge](https://img.shields.io/badge/license-Apache2-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Backers on Open Collective](https://opencollective.com/selenium-jupiter/backers/badge.svg)](#backers)
 [![Sponsors on Open Collective](https://opencollective.com/selenium-jupiter/sponsors/badge.svg)](#sponsors)
-[![Support badge](https://img.shields.io/badge/stackoverflow-selenium_jupiter-green.svg)](https://stackoverflow.com/questions/tagged/selenium-jupiter?sort=newest)
+[![Support badge](https://img.shields.io/badge/stackoverflow-selenium_jupiter-green.svg?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/selenium-jupiter?sort=newest)
 [![Twitter Follow](https://img.shields.io/twitter/follow/boni_gg.svg?style=social)](https://twitter.com/boni_gg)
 
 # Selenium-Jupiter Examples [![][Logo]][GitHub Repository]
@@ -52,9 +52,9 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 Selenium-Jupiter (Copyright &copy; 2017-2021) is a project by [Boni Garcia] licensed under [Apache 2.0 License].
 
-[Apache 2.0 License]: http://www.apache.org/licenses/LICENSE-2.0
-[Boni Garcia]: http://bonigarcia.github.io/
+[Apache 2.0 License]: https://www.apache.org/licenses/LICENSE-2.0
+[Boni Garcia]: https://bonigarcia.github.io/
 [GitHub Repository]: https://github.com/bonigarcia/selenium-jupiter-examples
 [JUnit 5]: https://junit.org/junit5/docs/current/user-guide/
-[Logo]: http://bonigarcia.github.io/img/selenium-jupiter.png
+[Logo]: https://bonigarcia.github.io/img/selenium-jupiter.png
 [Selenium-Jupiter user guide]: https://bonigarcia.github.io/selenium-jupiter/
