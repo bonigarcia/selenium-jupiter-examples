@@ -16,7 +16,7 @@
  */
 package io.github.bonigarcia.seljup.test.docker;
 
-import static com.google.common.truth.Truth.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
@@ -45,7 +45,7 @@ class DockerVncTest {
             throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle())
-                .containsMatch("JUnit 5 extension for Selenium");
+                .contains("JUnit 5 extension for Selenium");
 
         Thread.sleep(15000);
     }

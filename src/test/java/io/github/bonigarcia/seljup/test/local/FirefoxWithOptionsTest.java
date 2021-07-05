@@ -16,7 +16,7 @@
  */
 package io.github.bonigarcia.seljup.test.local;
 
-import static com.google.common.truth.Truth.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

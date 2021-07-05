@@ -16,7 +16,7 @@
  */
 package io.github.bonigarcia.seljup.test.local;
 
-import static com.google.common.truth.Truth.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -47,6 +47,6 @@ class ChromeWithOptionsTest {
     void headlessTest(@Arguments("--headless") ChromeDriver driver) {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle())
-                .containsMatch("JUnit 5 extension for Selenium");
+                .contains("JUnit 5 extension for Selenium");
     }
 }

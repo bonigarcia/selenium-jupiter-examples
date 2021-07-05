@@ -16,8 +16,8 @@
  */
 package io.github.bonigarcia.seljup.test.local;
 
-import static com.google.common.truth.Truth.assertThat;
 import static java.lang.invoke.MethodHandles.lookup;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.slf4j.LoggerFactory.getLogger;
 
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
@@ -54,7 +54,7 @@ class OrderedSeleniumTest {
         log.debug("Step 1: {}", driver);
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle())
-                .containsMatch("JUnit 5 extension for Selenium");
+                .contains("JUnit 5 extension for Selenium");
     }
 
     @Test
@@ -63,7 +63,7 @@ class OrderedSeleniumTest {
         log.debug("Step 2: {}", driver);
         WebElement about = driver.findElementByLinkText("About");
 
-        assertThat(about.isDisplayed());
+        assertThat(about.isDisplayed()).isTrue();
         about.click();
 
         Thread.sleep(3000);

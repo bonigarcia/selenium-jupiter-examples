@@ -16,13 +16,12 @@
  */
 package io.github.bonigarcia.seljup.test.docker;
 
-import static com.google.common.truth.Truth.assertThat;
 import static io.github.bonigarcia.seljup.BrowserType.ANDROID;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.condition.OS.LINUX;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
-// tag::snippet-in-doc[]
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.extension.RegisterExtension;
@@ -52,7 +51,7 @@ class DockerAndroidTest {
             throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle())
-                .containsMatch("JUnit 5 extension for Selenium");
+                .contains("JUnit 5 extension for Selenium");
 
         Thread.sleep(20000);
     }
