@@ -19,6 +19,7 @@ package io.github.bonigarcia.seljup.test.template;
 import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +28,7 @@ import io.github.bonigarcia.seljup.BrowserBuilder;
 import io.github.bonigarcia.seljup.BrowsersTemplate.Browser;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
+@Tag("local")
 class TemplateRegisterTest {
 
     @RegisterExtension

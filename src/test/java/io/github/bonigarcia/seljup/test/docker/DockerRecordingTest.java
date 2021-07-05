@@ -20,6 +20,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static io.github.bonigarcia.seljup.BrowserType.CHROME;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -27,6 +28,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import io.github.bonigarcia.seljup.DockerBrowser;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
+@Tag("docker")
 class DockerRecordingTest {
 
     @RegisterExtension

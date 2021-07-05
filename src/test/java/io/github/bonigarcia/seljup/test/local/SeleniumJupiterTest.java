@@ -18,12 +18,14 @@ package io.github.bonigarcia.seljup.test.local;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
+@Tag("local")
 @ExtendWith(SeleniumJupiter.class)
 class SeleniumJupiterTest {
 
