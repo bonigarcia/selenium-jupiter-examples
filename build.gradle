@@ -52,7 +52,7 @@ dependencies {
     testImplementation("org.seleniumhq.selenium:selenium-java:${selenium}")
     testImplementation("io.github.bonigarcia:selenium-jupiter:${seleniumjupiter}")
     testImplementation("com.google.truth:truth:${truth}")
-    testImplementation("com.codeborne:selenide${selenide}") {
+    testImplementation("com.codeborne:selenide:${selenide}") {
         exclude group: "org.apache.httpcomponents.client5", module: "httpclient5"
     }
     testImplementation("io.appium:java-client${appium}")
