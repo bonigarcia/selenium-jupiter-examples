@@ -20,6 +20,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static io.github.bonigarcia.seljup.BrowserType.CHROME;
 import static io.github.bonigarcia.seljup.BrowserType.FIREFOX;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -40,6 +41,7 @@ class DockerBasicTest {
     }
 
     @Test
+    @Disabled
     void testFirefoxBeta(
             @DockerBrowser(type = FIREFOX, version = "beta") RemoteWebDriver driver) {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
