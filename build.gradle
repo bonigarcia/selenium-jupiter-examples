@@ -25,7 +25,10 @@ ext {
 
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform {
+        includeTags "local", "docker"
+        excludeTags "remote", "android"
+    }
 
     testLogging {
         events "passed", "skipped", "failed"
