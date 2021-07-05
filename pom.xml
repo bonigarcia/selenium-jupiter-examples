@@ -5,7 +5,7 @@
 
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>selenium-jupiter-examples</artifactId>
-    <version>3.4.0</version>
+    <version>4.0.0-SNAPSHOT</version>
 
     <properties>
         <!-- Dependencies -->
@@ -13,16 +13,19 @@
         <logback.version>1.2.3</logback.version>
 
         <!-- Test dependencies version -->
-        <junit5.version>5.7.0</junit5.version>
-        <selenium-jupiter.version>3.4.0</selenium-jupiter.version>
-        <truth.version>1.1.2</truth.version>
+        <selenium.version>3.141.59</selenium.version>
+        <selenium-jupiter.version>4.0.0-SNAPSHOT</selenium-jupiter.version>
         <junit4.version>4.13.1</junit4.version>
+        <junit5.version>5.7.0</junit5.version>
+        <truth.version>1.1.2</truth.version>
+        <selenide.version>5.22.2</selenide.version>
+        <appium-java-client.version>7.5.1</appium-java-client.version>
 
         <!-- Plugins versions -->
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
 
-        <!-- Java 8 -->
-        <java.version>1.8</java.version>
+        <!-- Java 11 -->
+        <java.version>11</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
@@ -54,14 +57,20 @@
 
         <!-- Test dependencies -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit5.version}</version>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit4.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
+            <artifactId>junit-jupiter</artifactId>
             <version>${junit5.version}</version>
             <scope>test</scope>
         </dependency>
@@ -78,10 +87,16 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit4.version}</version>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenide.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${appium-java-client.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -96,4 +111,17 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>sonatype-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
