@@ -19,7 +19,7 @@ ext {
 	selenium  = '3.141.59'
 	seleniumjupiter = '4.0.0-SNAPSHOT'
 	assertj = '3.20.2'
-	selenide = '5.22.3'
+	selenide = '5.23.0'
 	appium = '7.5.1'
 }
 
