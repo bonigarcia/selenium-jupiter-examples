@@ -19,8 +19,6 @@ ext {
 	selenium  = '3.141.59'
 	seleniumjupiter = '4.0.0-SNAPSHOT'
 	assertj = '3.20.2'
-	selenide = '5.22.3'
-	appium = '7.5.1'
 }
 
 
@@ -47,14 +45,10 @@ compileTestJava {
 dependencies {
     implementation("org.slf4j:slf4j-api:${slf4j}")
     implementation("ch.qos.logback:logback-classic:${logback}")
-    
+
     testImplementation("junit:junit:${junit4}")
     testImplementation("org.junit.jupiter:junit-jupiter:${junit5}")
     testImplementation("org.seleniumhq.selenium:selenium-java:${selenium}")
     testImplementation("io.github.bonigarcia:selenium-jupiter:${seleniumjupiter}")
     testImplementation("org.assertj:assertj-core:${assertj}")
-    testImplementation("com.codeborne:selenide:${selenide}") {
-        exclude group: "org.apache.httpcomponents.client5", module: "httpclient5"
-    }
-    testImplementation("io.appium:java-client:${appium}")
 }

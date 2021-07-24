@@ -18,8 +18,6 @@
         <junit4.version>4.13.2</junit4.version>
         <junit5.version>5.7.2</junit5.version>
         <assertj.version>3.20.2</assertj.version>
-        <selenide.version>5.22.3</selenide.version>
-        <appium-java-client.version>7.5.1</appium-java-client.version>
 
         <!-- Plugins versions -->
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
@@ -85,24 +83,6 @@
             <artifactId>assertj-core</artifactId>
             <version>${assertj.version}</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.codeborne</groupId>
-            <artifactId>selenide</artifactId>
-            <version>${selenide.version}</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.httpcomponents.client5</groupId>
-                    <artifactId>httpclient5</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>${appium-java-client.version}</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 
