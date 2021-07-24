@@ -18,10 +18,9 @@ package io.github.bonigarcia.seljup.test.docker;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.RegisterExtension;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.seljup.BrowserType;
@@ -29,19 +28,12 @@ import io.github.bonigarcia.seljup.DockerBrowser;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
 @Tag("docker")
+@ExtendWith(SeleniumJupiter.class)
 class DockerVncTest {
-
-    @RegisterExtension
-    static SeleniumJupiter seleniumJupiter = new SeleniumJupiter();
-
-    @BeforeAll
-    static void setup() {
-        seleniumJupiter.getConfig().setVnc(true);
-    }
 
     @Test
     void testVnc(
-            @DockerBrowser(type = BrowserType.CHROME) RemoteWebDriver driver)
+            @DockerBrowser(type = BrowserType.CHROME, vnc = true) RemoteWebDriver driver)
             throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle())

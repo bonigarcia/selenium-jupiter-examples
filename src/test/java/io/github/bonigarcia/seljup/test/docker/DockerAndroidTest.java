@@ -16,15 +16,14 @@
  */
 package io.github.bonigarcia.seljup.test.docker;
 
-import static io.github.bonigarcia.seljup.BrowserType.ANDROID;
+import static io.github.bonigarcia.seljup.BrowserType.CHROME_MOBILE;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.condition.OS.LINUX;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledOnOs;
-import org.junit.jupiter.api.extension.RegisterExtension;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.seljup.DockerBrowser;
@@ -33,21 +32,12 @@ import io.github.bonigarcia.seljup.SeleniumJupiter;
 @EnabledOnOs(LINUX)
 @Tag("docker")
 @Tag("android")
+@ExtendWith(SeleniumJupiter.class)
 class DockerAndroidTest {
-
-    @RegisterExtension
-    static SeleniumJupiter seleniumJupiter = new SeleniumJupiter();
-
-    @BeforeAll
-    static void setup() {
-        seleniumJupiter.getConfig().setVnc(true);
-        seleniumJupiter.getConfig().setRecording(true);
-        seleniumJupiter.getConfig().setAndroidDeviceStartupTimeoutSec(15);
-    }
 
     @Test
     void testAndroid(
-            @DockerBrowser(type = ANDROID, version = "9.0", deviceName = "Samsung Galaxy S6") RemoteWebDriver driver)
+            @DockerBrowser(type = CHROME_MOBILE, vnc = true, recording = true) RemoteWebDriver driver)
             throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle())

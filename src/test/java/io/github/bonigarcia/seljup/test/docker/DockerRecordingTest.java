@@ -19,29 +19,21 @@ package io.github.bonigarcia.seljup.test.docker;
 import static io.github.bonigarcia.seljup.BrowserType.CHROME;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.RegisterExtension;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.seljup.DockerBrowser;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
 
 @Tag("docker")
+@ExtendWith(SeleniumJupiter.class)
 class DockerRecordingTest {
-
-    @RegisterExtension
-    static SeleniumJupiter seleniumJupiter = new SeleniumJupiter();
-
-    @BeforeEach
-    void setup() {
-        seleniumJupiter.getConfig().setRecording(true);
-    }
 
     @Test
     void testRecording(
-            @DockerBrowser(type = CHROME, version = "latest-1") RemoteWebDriver driver)
+            @DockerBrowser(type = CHROME, version = "latest-1", recording = true) RemoteWebDriver driver)
             throws InterruptedException {
         driver.get("https://bonigarcia.github.io/selenium-jupiter/");
         assertThat(driver.getTitle())
