@@ -60,7 +60,7 @@ class OrderedSeleniumTest {
     @Order(2)
     void testStep2() throws InterruptedException {
         log.debug("Step 2: {}", driver);
-        WebElement about = driver.findElementByLinkText("About");
+        WebElement about = driver.findElementByPartialLinkText("About");
 
         assertThat(about.isDisplayed()).isTrue();
         about.click();
