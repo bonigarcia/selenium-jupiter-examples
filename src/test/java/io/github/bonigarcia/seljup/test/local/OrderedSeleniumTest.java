@@ -53,8 +53,7 @@ class OrderedSeleniumTest {
     void testStep1() {
         log.debug("Step 1: {}", driver);
         driver.get("https://bonigarcia.org/selenium-jupiter/");
-        assertThat(driver.getTitle())
-                .contains("JUnit 5 extension for Selenium");
+        assertThat(driver.getTitle()).contains("Selenium-Jupiter");
     }
 
     @Test

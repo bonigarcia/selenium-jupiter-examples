@@ -36,8 +36,7 @@ class DockerRecordingTest {
             @DockerBrowser(type = CHROME, version = "latest-1", recording = true) RemoteWebDriver driver)
             throws InterruptedException {
         driver.get("https://bonigarcia.org/selenium-jupiter/");
-        assertThat(driver.getTitle())
-                .contains("JUnit 5 extension for Selenium");
+        assertThat(driver.getTitle()).contains("Selenium-Jupiter");
 
         Thread.sleep(5000);
     }

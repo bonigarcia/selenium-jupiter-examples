@@ -36,8 +36,7 @@ class DockerBasicTest {
     @Test
     void testChrome(@DockerBrowser(type = CHROME) RemoteWebDriver driver) {
         driver.get("https://bonigarcia.org/selenium-jupiter/");
-        assertThat(driver.getTitle())
-                .contains("JUnit 5 extension for Selenium");
+        assertThat(driver.getTitle()).contains("Selenium-Jupiter");
     }
 
     @Test
@@ -45,8 +44,7 @@ class DockerBasicTest {
     void testFirefoxBeta(
             @DockerBrowser(type = FIREFOX, version = "beta") RemoteWebDriver driver) {
         driver.get("https://bonigarcia.org/selenium-jupiter/");
-        assertThat(driver.getTitle())
-                .contains("JUnit 5 extension for Selenium");
+        assertThat(driver.getTitle()).contains("Selenium-Jupiter");
     }
 
 }

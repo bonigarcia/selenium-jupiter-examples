@@ -50,8 +50,7 @@ public class SeleniumJUnit4Test {
     @Test
     public void test() {
         driver.get("https://bonigarcia.org/selenium-jupiter/");
-        assertThat(driver.getTitle())
-                .contains("JUnit 5 extension for Selenium");
+        assertThat(driver.getTitle()).contains("Selenium-Jupiter");
     }
 
 }
