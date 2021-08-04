@@ -1,6 +1,6 @@
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.github.bonigarcia%20a%3Aselenium-jupiter)
 [![Build Status](https://github.com/bonigarcia/selenium-jupiter-examples/workflows/build/badge.svg)](https://github.com/bonigarcia/selenium-jupiter-examples/actions)
-[![badge-jdk](https://img.shields.io/badge/jdk-8-green.svg)](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+[![badge-jdk](https://img.shields.io/badge/jdk-11-green.svg)](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 [![License badge](https://img.shields.io/badge/license-Apache2-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Backers on Open Collective](https://opencollective.com/selenium-jupiter/backers/badge.svg)](#backers)
 [![Sponsors on Open Collective](https://opencollective.com/selenium-jupiter/sponsors/badge.svg)](#sponsors)
@@ -13,7 +13,7 @@
 
 ## Usage
 
-In order to include *Selenium-Jupiter* in a Maven project, first add the following dependency to your `pom.xml` (Java 8+ required):
+In order to include *Selenium-Jupiter* in a Maven project, first add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
