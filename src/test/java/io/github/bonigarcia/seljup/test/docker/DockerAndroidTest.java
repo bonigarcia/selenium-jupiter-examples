@@ -39,8 +39,8 @@ class DockerAndroidTest {
     void testAndroid(
             @DockerBrowser(type = CHROME_MOBILE, vnc = true, recording = true) RemoteWebDriver driver)
             throws InterruptedException {
-        driver.get("https://bonigarcia.org/selenium-jupiter/");
-        assertThat(driver.getTitle()).contains("Selenium-Jupiter");
+        driver.get("https://bonigarcia.dev/selenium-jupiter/");
+        assertThat(driver.getTitle()).contains("Selenium WebDriver");
 
         Thread.sleep(20000);
     }

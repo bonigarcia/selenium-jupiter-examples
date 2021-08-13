@@ -57,4 +57,4 @@ Selenium-Jupiter (Copyright &copy; 2017-2021) is a project by [Boni Garcia] lice
 [GitHub Repository]: https://github.com/bonigarcia/selenium-jupiter-examples
 [JUnit 5]: https://junit.org/junit5/docs/current/user-guide/
 [Logo]: https://bonigarcia.github.io/img/selenium-jupiter.png
-[Selenium-Jupiter user guide]: https://bonigarcia.org/selenium-jupiter/
+[Selenium-Jupiter user guide]: https://bonigarcia.github.io/selenium-jupiter/

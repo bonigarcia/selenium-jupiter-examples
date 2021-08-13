@@ -11,7 +11,7 @@ async function basicTest() {
 		var driver = await new webdriver.Builder().usingServer(seleniumServerUrl)
 				.withCapabilities(capabilities).build();
 
-		var sutUrl = "https://bonigarcia.org/selenium-jupiter/";
+		var sutUrl = "https://bonigarcia.dev/selenium-jupiter/";
 		await driver.get(sutUrl);
 
 		await driver.getTitle().then(function(title) {
