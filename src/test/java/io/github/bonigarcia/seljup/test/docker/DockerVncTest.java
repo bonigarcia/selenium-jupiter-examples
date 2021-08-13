@@ -35,7 +35,7 @@ class DockerVncTest {
     void testVnc(
             @DockerBrowser(type = BrowserType.CHROME, vnc = true) RemoteWebDriver driver)
             throws InterruptedException {
-        driver.get("https://bonigarcia.dev/selenium-jupiter/");
+        driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
         assertThat(driver.getTitle()).contains("Selenium WebDriver");
 
         Thread.sleep(15000);
