@@ -20,6 +20,7 @@ import static java.lang.invoke.MethodHandles.lookup;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.slf4j.LoggerFactory.getLogger;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Tag;
@@ -58,13 +59,16 @@ class OrderedSeleniumTest {
 
     @Test
     @Order(2)
-    void testStep2() throws InterruptedException {
+    void testStep2() {
         log.debug("Step 2: {}", driver);
-        WebElement about = driver.findElementByPartialLinkText("About");
+        WebElement about = driver.findElementByPartialLinkText("form");
 
         assertThat(about.isDisplayed()).isTrue();
         about.click();
+    }
 
+    @AfterAll
+    static void teardown() throws InterruptedException {
         Thread.sleep(3000);
     }
 
