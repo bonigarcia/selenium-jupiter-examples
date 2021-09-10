@@ -11,7 +11,7 @@ repositories {
 
 ext {
 	slf4j = '1.7.32'
-	logback = '1.2.5'
+	logback = '1.2.6'
 
 	junit4 = '4.13.2'
 	junit5 = '5.7.2'
