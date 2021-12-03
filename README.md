@@ -36,17 +36,17 @@ dependencies {
 
 If you have questions on how to use *Selenium-Jupiter* please take a look to the [Selenium-Jupiter user guide].
 
-## Backers
+## Support
 
-Thank you to all our backers! [[Become a backer](https://opencollective.com/selenium-jupiter#backer)]
+Selenium-Jupiter is part of [OpenCollective], an online funding platform for open and transparent communities. You can support the project by contributing as a backer (i.e., a personal [donation] or [recurring contribution]) or as a [sponsor] (i.e., a recurring contribution by a company).
 
-<a href="https://opencollective.com/selenium-jupiter#backers" target="_blank"><img src="https://opencollective.com/selenium-jupiter/backers.svg?width=890"></a>
+### Backers
 
-## Sponsors
+<a href="https://opencollective.com/selenium-jupiter" target="_blank"><img src="https://opencollective.com/selenium-jupiter/backers.svg?width=890"></a>
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/selenium-jupiter#sponsor)]
+### Sponsors
 
-<a href="https://opencollective.com/selenium-jupiter/sponsor/0/website" target="_blank"><img src="https://opencollective.com/selenium-jupiter/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/selenium-jupiter" target="_blank"><img src="https://opencollective.com/selenium-jupiter/sponsors.svg?width=890"></a>
 
 ## About
 
@@ -58,3 +58,7 @@ Selenium-Jupiter (Copyright &copy; 2017-2021) is a project by [Boni Garcia] lice
 [JUnit 5]: https://junit.org/junit5/docs/current/user-guide/
 [Logo]: https://bonigarcia.github.io/img/selenium-jupiter.png
 [Selenium-Jupiter user guide]: https://bonigarcia.github.io/selenium-jupiter/
+[OpenCollective]: https://opencollective.com/selenium-jupiter
+[donation]: https://opencollective.com/selenium-jupiter/donate
+[recurring contribution]: https://opencollective.com/selenium-jupiter/contribute/backer-8132/checkout
+[sponsor]: https://opencollective.com/selenium-jupiter/contribute/sponsor-8133/checkout
