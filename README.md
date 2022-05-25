@@ -52,14 +52,14 @@ Selenium-Jupiter is part of [OpenCollective], an online funding platform for ope
 
 ## About
 
-Selenium-Jupiter (Copyright &copy; 2017-2021) is a project by [Boni Garcia] licensed under [Apache 2.0 License].
+Selenium-Jupiter (Copyright &copy; 2017-2022) is a project by [Boni Garcia] licensed under [Apache 2.0 License].
 
 [Apache 2.0 License]: https://www.apache.org/licenses/LICENSE-2.0
 [Boni Garcia]: https://bonigarcia.github.io/
 [GitHub Repository]: https://github.com/bonigarcia/selenium-jupiter-examples
 [JUnit 5]: https://junit.org/junit5/docs/current/user-guide/
 [Logo]: https://bonigarcia.github.io/img/selenium-jupiter.png
-[Selenium-Jupiter user guide]: https://bonigarcia.github.io/selenium-jupiter/
+[Selenium-Jupiter user guide]: https://bonigarcia.dev/selenium-jupiter/
 [OpenCollective]: https://opencollective.com/selenium-jupiter
 [donation]: https://opencollective.com/selenium-jupiter/donate
 [recurring contribution]: https://opencollective.com/selenium-jupiter/contribute/backer-8132/checkout
