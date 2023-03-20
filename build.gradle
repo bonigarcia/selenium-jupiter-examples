@@ -10,7 +10,7 @@ repositories {
 }
 
 ext {
-	slf4j = '2.0.6'
+	slf4j = '2.0.7'
 	logback = '1.4.6'
 
 	junit4 = '4.13.2'
