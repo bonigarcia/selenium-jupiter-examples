@@ -13,7 +13,7 @@
         <logback.version>1.4.7</logback.version>
 
         <!-- Test dependencies version -->
-        <selenium.version>4.9.1</selenium.version>
+        <selenium.version>4.10.0</selenium.version>
         <selenium-jupiter.version>4.3.4</selenium-jupiter.version>
         <junit4.version>4.13.2</junit4.version>
         <junit5.version>5.9.3</junit5.version>
