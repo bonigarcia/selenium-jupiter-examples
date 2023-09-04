@@ -9,7 +9,7 @@
 
     <properties>
         <!-- Dependencies -->
-        <slf4j.version>2.0.7</slf4j.version>
+        <slf4j.version>2.0.9</slf4j.version>
         <logback.version>1.4.11</logback.version>
 
         <!-- Test dependencies version -->
