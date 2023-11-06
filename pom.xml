@@ -16,7 +16,7 @@
         <selenium.version>4.15.0</selenium.version>
         <selenium-jupiter.version>5.0.0</selenium-jupiter.version>
         <junit4.version>4.13.2</junit4.version>
-        <junit5.version>5.10.0</junit5.version>
+        <junit5.version>5.10.1</junit5.version>
         <assertj.version>3.24.2</assertj.version>
 
         <!-- Plugins versions -->
