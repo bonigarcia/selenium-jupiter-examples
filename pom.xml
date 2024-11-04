@@ -20,7 +20,7 @@
         <assertj.version>3.26.3</assertj.version>
 
         <!-- Plugins versions -->
-        <maven-surefire-plugin.version>3.5.0</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
 
         <!-- Java 8 -->
         <java.version>1.8</java.version>
