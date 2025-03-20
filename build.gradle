@@ -16,7 +16,7 @@ ext {
 	junit4 = '4.13.2'
 	junit5 = '5.12.1'
 	selenium  = '4.29.0'
-	seleniumjupiter = '5.1.1'
+	seleniumjupiter = '6.0.0'
 	assertj = '3.27.3'
 }
 
