@@ -14,7 +14,7 @@
 
         <!-- Test dependencies version -->
         <selenium.version>4.34.0</selenium.version>
-        <selenium-jupiter.version>6.1.1</selenium-jupiter.version>
+        <selenium-jupiter.version>6.1.2</selenium-jupiter.version>
         <junit4.version>4.13.2</junit4.version>
         <junit5.version>5.13.3</junit5.version>
         <assertj.version>3.27.3</assertj.version>
