@@ -8,6 +8,6 @@
         "start": "node basic-test.js"
     },
     "dependencies": {
-        "selenium-webdriver": "^4.0.0-alpha"
+        "selenium-webdriver": "^4.34.0"
     }
 }
