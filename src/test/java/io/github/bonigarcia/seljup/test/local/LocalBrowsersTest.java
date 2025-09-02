@@ -35,7 +35,7 @@ class LocalBrowsersTest {
         driver1.get("http://www.seleniumhq.org/");
         driver2.get("http://junit.org/junit5/");
         assertThat(driver1.getTitle()).startsWith("Selenium");
-        assertThat(driver2.getTitle()).isEqualTo("JUnit 5");
+        assertThat(driver2.getTitle()).isEqualTo("JUnit");
     }
 
 }
