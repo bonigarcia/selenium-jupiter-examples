@@ -10,7 +10,7 @@
     <properties>
         <!-- Dependencies -->
         <slf4j.version>2.0.17</slf4j.version>
-        <logback.version>1.5.23</logback.version>
+        <logback.version>1.5.25</logback.version>
 
         <!-- Test dependencies version -->
         <selenium.version>4.39.0</selenium.version>
