@@ -17,7 +17,7 @@
         <selenium-jupiter.version>6.3.1</selenium-jupiter.version>
         <junit4.version>4.13.2</junit4.version>
         <junit5.version>6.0.2</junit5.version>
-        <assertj.version>3.27.6</assertj.version>
+        <assertj.version>3.27.7</assertj.version>
 
         <!-- Plugins versions -->
         <maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
