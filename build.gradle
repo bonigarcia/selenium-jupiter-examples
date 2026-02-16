@@ -14,7 +14,7 @@ ext {
 	logback = '1.5.28'
 
 	junit4 = '4.13.2'
-	junit5 = '6.0.2'
+	junit5 = '6.0.3'
 	selenium  = '4.40.0'
 	seleniumjupiter = '6.3.1'
 	assertj = '3.27.5'
